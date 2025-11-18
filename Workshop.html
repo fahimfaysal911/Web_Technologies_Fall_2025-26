@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <style>
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 100px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: lightblue
+        }
+
+        body {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .p {
+            line-height: 1.5; 
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        
+        .left-alignment {
+            text-align: left;
+            font-weight: bold;
+            
+        }
+        
+    </style>
+    <script>
+
+        function Register(){}
+
+        function detailes() {
+            
+            document.getElementById("demo1").innerHTML = "Total Number of Registrants";
+            document.getElementById("demo2").innerHTML = "Attendance Breakdown";
+            
+        }
+        
+        function checkName(){
+            if(document.getElementById("name1") == null){
+                postMessage("Name must be between 6 and 100 characters.")    
+            }
+            else{
+
+            }
+
+        }
+
+        function checkEmail(){
+            if(document.getElementById("email1") == null){
+                postMessage("Please enter a valid professional email address.")    
+            }
+            else if (document.getElementById("email1").innerText){
+
+            }
+            else{}
+
+        }
+        function checkName(){
+            if(document.getElementById("atten1") == null){
+                postMessage("Please select your attendence type.")    
+            }
+            else{
+
+            }
+
+        }
+        
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center-text" style="color: black;"> Global Tech Connect</h1>
+        <h1></h1>
+        <form>
+            <table>
+                
+                <tr>
+                    <td class="left-alignment" id="name1">Full Name <span style="color:red">*</span></td>
+                    <td><input type="" placeholder="Enter Your Full name" /></td>
+                </tr>
+                <tr>
+                    <td class="left-alignment" id="email1">E-mail <span style="color:red">*</span></td>
+                    <td><input type="" placeholder="Enter Your E--mail" /></td>
+                </tr>
+                <tr>
+                    <td class="left-alignment">Company / Institution </td>
+                    <td><input type="" placeholder="" /></td>
+                </tr>
+
+                <tr>
+                    <td class="left-alignment" id="atten1">Attendance Type <span style="color:red">*</span></td>
+                    <td>
+                        <input type="radio" name="Attendance" value="Virtual" />Virtual
+                        <input type="radio" name="Attendance" value="$In-Person" />$In-Person
+                        
+                    </td>
+                </tr>
+   
+            </table>
+
+            <button type="button" onclick="Register()">Register</button>
+
+            <button type="reset"> Clear </button>
+
+            <button type="button" onclick="detailes()">Show Event Analytics</button>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+        
+
+        </form>
+
+    </div>
+
+</body>
+</html>
+
+
+                        
